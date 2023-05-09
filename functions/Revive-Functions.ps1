@@ -48,6 +48,7 @@ Function ResetUserPasswords {
 
         Start-Sleep -Seconds 5
         Show-Menu -Title $p.Title -Version $p.Version -RVTools $p.RVTools
+        break
     }
     
 
