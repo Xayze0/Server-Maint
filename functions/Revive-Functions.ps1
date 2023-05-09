@@ -40,6 +40,19 @@ Function ResetUserPasswords {
     #Collect all OUs with '-' in there name.
     #Can Also be overridden by providing an OU manually
     Try{
+        Get-Module -ListAvailable | Where-Object Name -eq "ActiveDirectory"
+    
+    }catch {
+        Write-Host "Unable To Find ActiveDirectory Module" -ForegroundColor Red
+        Write-Host "Please Run This Tool On The MDC" -ForegroundColor Red
+        Write-Host "Returning To Menu" -ForegroundColor Cyan
+
+        Start-Sleep -Seconds 5
+        Show-Menu -Title $P.Title -Version $p.Version -RVTools $p.RVTools
+    }
+
+
+    Try{
         $OUs = Get-ADOrganizationalUnit -Filter '*' | Where-Object {$_.Name -like "-*"} | Sort-Object -Property DistinguishedName
             Write-Host "[Organizational Units]"  -ForegroundColor Cyan
 
