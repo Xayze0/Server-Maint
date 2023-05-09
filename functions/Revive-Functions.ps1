@@ -20,7 +20,7 @@ Function Show-Menu{
         Write-Host "    | ][ |     " 
         $count = 1
         foreach ($tool in $RVTools.Values) {
-        $bar =     "    | ][ |     : Press '$count' to ' "+ $tool
+        $bar =     "    | ][ |     : Press '$count' to  "+ $tool
         Write-Host $bar
         $count++
         }   
