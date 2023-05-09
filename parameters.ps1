@@ -11,7 +11,7 @@
         
         RVTools = [ordered]@{ SMResetUserPasswords = "Reset User Passwords"}
 
-        #RVToolsIM = [ordered]@{RTIMUsageReport = "IM Usage Report (Under Construction)"}
+        RVToolsIM = [ordered]@{RTIMUsageReport = "IM Usage Report (Under Construction)"}
 
         Title = "Eclipse Onboard ToolBox"
 

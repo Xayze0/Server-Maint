@@ -63,7 +63,7 @@ Process{
     $CMD = Find-ImagePath
 
     do{
-        Show-Menu -Title $P.Title -Version $p.Version -RVTools $p.RVTools -RVToolsIM $p.RVToolsIM
+        Show-Menu -Title $P.Title -Version $p.Version -RVTools $p.RVTools
         $UserInput = Read-Host "Please make a selection"
 
         #Can I make this a Dynamic Switch???
