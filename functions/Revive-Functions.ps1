@@ -65,7 +65,7 @@ Function ResetUserPasswords {
         Write-Host "Returning To Menu" -ForegroundColor Cyan
 
         Start-Sleep -Seconds 5
-        Show-Menu 
+        Show-Menu -Title $P.Title -Version $p.Version -RVTools $p.RVTools
     }
 
     ##Collect users
@@ -76,7 +76,7 @@ Function ResetUserPasswords {
         Write-Host "Returning To Menu" -ForegroundColor Cyan
 
         Start-Sleep -Seconds 5
-        Show-Menu 
+        Show-Menu -Title $P.Title -Version $p.Version -RVTools $p.RVTools
     }
 
     ##Collect Password
@@ -89,7 +89,7 @@ Function ResetUserPasswords {
         Write-Host "Returning To Menu" -ForegroundColor Cyan
 
         Start-Sleep -Seconds 5
-        Show-Menu 
+        Show-Menu -Title $P.Title -Version $p.Version -RVTools $p.RVTools
     }
 
     ##Collect Reset Bool
@@ -102,7 +102,7 @@ Function ResetUserPasswords {
         Write-Host "Returning To Menu" -ForegroundColor Cyan
 
         Start-Sleep -Seconds 5
-        Show-Menu 
+        Show-Menu -Title $P.Title -Version $p.Version -RVTools $p.RVTools
     }
 
     ##Collect Confirm
@@ -116,7 +116,7 @@ Function ResetUserPasswords {
         Write-Host "Returning To Menu" -ForegroundColor Cyan
 
         Start-Sleep -Seconds 5
-        Show-Menu 
+        Show-Menu -Title $P.Title -Version $p.Version -RVTools $p.RVTools
     }
 
     if ($Confirm -eq "Y"){
@@ -135,7 +135,7 @@ Function ResetUserPasswords {
         Write-Host "Returning To Menu" -ForegroundColor Cyan
 
         Start-Sleep -Seconds 5
-        Show-Menu 
+        Show-Menu -Title $P.Title -Version $p.Version -RVTools $p.RVTools
     }
 
 
