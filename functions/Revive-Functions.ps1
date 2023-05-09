@@ -6,9 +6,7 @@ Function Show-Menu{
             [Parameter(Mandatory=$true)]
             [string]$Version,
             [Parameter(Mandatory=$true)]
-            [System.Collections.Specialized.OrderedDictionary]$RVTools,
-            [Parameter(Mandatory=$true)]
-            [System.Collections.Specialized.OrderedDictionary]$RVToolsIM 
+            [System.Collections.Specialized.OrderedDictionary]$RVTools
     )
     Clear-Host
         Write-Host "===================[ $Title ]====================[v$Version]"
