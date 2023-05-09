@@ -9,7 +9,7 @@
         #RVImageCmdArg1 = "qp"
         #RVImageCmdArg3 = 'd=$n'
         
-        RVTools = [ordered]@{ SMResetUserPasswords = "Reset User Passwords"}
+        RVTools = [ordered]@{ ResetUserPasswords = "Reset User Passwords"}
 
         Title = "Eclipse Onboard ToolBox"
 

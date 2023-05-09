@@ -59,9 +59,6 @@ Begin{
 
 
 Process{
-    #--
-    $CMD = Find-ImagePath
-
     do{
         Show-Menu -Title $P.Title -Version $p.Version -RVTools $p.RVTools
         $UserInput = Read-Host "Please make a selection"
@@ -71,8 +68,10 @@ Process{
         switch ($UserInput)
         {
                 '1' {
-                    RTCollectBackupSizes -Exclusions $p.Exclusions
-              } '2' {
+                     ResetUserPasswords
+              } 
+              
+              <#'2' {
                     RTSPXErrors 
               } '3' {
                     RTRemoveOldInc -Exclusions $p.Exclusions -RVCMDarg1 $p.RVImageCmdArg1 -RVCMDarg3 $p.RVImageCmdArg3
@@ -82,7 +81,8 @@ Process{
                     Write-Host "These are not the droids your looking for"
               } 'AK' {
                     RTIMFolders -Exclusions $p.Exclusions
-              } 'q' {
+              }
+              #> 'q' {
                    return
               }
         }
