@@ -47,7 +47,7 @@ Function ResetUserPasswords {
         Write-Host "Returning To Menu" -ForegroundColor Cyan
 
         Start-Sleep -Seconds 5
-        Show-Menu -Title $P.Title -Version $p.Version -RVTools $p.RVTools
+        Show-Menu -Title $p.Title -Version $p.Version -RVTools $p.RVTools
     }
     
 
