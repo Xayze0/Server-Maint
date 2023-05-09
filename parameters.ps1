@@ -9,7 +9,7 @@
         #RVImageCmdArg1 = "qp"
         #RVImageCmdArg3 = 'd=$n'
         
-        #RVTools = [ordered]@{ RTCollectBackupSizes = "Collect Backup Sizes"; RTSPXErrors = "Find SPX Errors in logs"; RTRemoveOldInc = "Move unrequired .SPI Files" ; RTVerifyChain = "Verify Chains"}
+        RVTools = [ordered]@{ SMResetUserPasswords = "Reset User Passwords"}
 
         #RVToolsIM = [ordered]@{RTIMUsageReport = "IM Usage Report (Under Construction)"}
 
